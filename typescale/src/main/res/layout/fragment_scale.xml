@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:theme="@style/Theme.MyApp.TypeScale"
+  tools:context=".TypeScaleFragment">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Body1"
+      android:textAppearance="?attr/textAppearanceBody1" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Body2"
+      android:textAppearance="?attr/textAppearanceBody2" />
+
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Button" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Caption"
+      android:textAppearance="?attr/textAppearanceCaption" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Overline"
+      android:textAppearance="?attr/textAppearanceOverline" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Subtitle1"
+      android:textAppearance="?attr/textAppearanceSubtitle1" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Subtitle2"
+      android:textAppearance="?attr/textAppearanceSubtitle2" />
+
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Headline6"
+      android:textAppearance="?attr/textAppearanceHeadline6" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Headline5"
+      android:textAppearance="?attr/textAppearanceHeadline5" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Headline4"
+      android:textAppearance="?attr/textAppearanceHeadline4" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Headline3"
+      android:textAppearance="?attr/textAppearanceHeadline3" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Headline2"
+      android:textAppearance="?attr/textAppearanceHeadline2" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:text="Text Appearance Headline1"
+      android:textAppearance="?attr/textAppearanceHeadline1" />
+
+
+  </LinearLayout>
+</ScrollView>

@@ -1,0 +1,3 @@
+rootProject.name='Android-Theming-Typography'
+include ':app'
+include ':typescale'

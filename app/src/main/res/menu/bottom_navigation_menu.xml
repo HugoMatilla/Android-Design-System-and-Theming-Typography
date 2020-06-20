@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".MainActivity">
+  <item
+    android:id="@+id/simple"
+    android:icon="@drawable/ic_child_care_24dp"
+    android:title="SIMPLE" />
+  <item
+    android:id="@+id/list"
+    android:icon="@drawable/ic_format_size_24dp"
+    android:title="LIST" />
+  <item
+    android:id="@+id/custom"
+    android:icon="@drawable/ic_brush_24dp"
+    android:title="CUSTOM" />
+</menu>

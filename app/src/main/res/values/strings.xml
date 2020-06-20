@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">Android Theming Typography</string>
+  <string name="italic_text"><i>This is in italic</i> this not</string>
+</resources>

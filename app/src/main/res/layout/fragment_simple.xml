@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".SimpleFragment">
+
+  <TextView
+    android:id="@+id/title0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:fontFamily="@font/comic_neue"
+    android:text="The font directly in the view" />
+
+  <TextView
+    android:id="@+id/title1"
+    style="@style/MyFontStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/title0"
+    android:layout_margin="16dp"
+    android:text="The font in a setyle" />
+
+  <TextView
+    android:id="@+id/title6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/title1"
+    android:layout_margin="16dp"
+    android:text="This is Android Typeface for Headline 6"
+    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+  <TextView
+    android:id="@+id/title5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/title6"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="16dp"
+    android:text="This is my custom Typeface for Headline 5"
+    android:textAppearance="?attr/textAppearanceHeadline5" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/title5"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="16dp"
+    android:text="@string/italic_text"
+    android:textAppearance="?attr/textAppearanceHeadline5" />
+
+</RelativeLayout>

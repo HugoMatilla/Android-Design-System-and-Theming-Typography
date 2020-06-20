@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--  Same as -->
+  <!--  <style name="TextAppearance.AppCompat.Body1.MyApp" parent="TextAppearance.AppCompat.Body1">-->
+  <style name="TextAppearance.AppCompat.Display1.MyApp">
+    <item name="fontFamily">@font/comic_neue_light</item>
+  </style>
+
+
+</resources>
