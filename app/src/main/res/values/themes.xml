@@ -2,7 +2,7 @@
 <resources>
 
   <style name="Base.Theme.MyApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-    <item name="textAppearanceHeadline5">@style/TextAppearance.AppCompat.Display1.MyApp</item>
+    <item name="textAppearanceHeadline6">@style/TextAppearance.MaterialComponents.Headline6.MyApp</item>
   </style>
 
 </resources>

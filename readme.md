@@ -130,13 +130,13 @@ In the [List component on the Theming section/typography ](https://material.io/c
 
 Let's go back to Android
 
-# Theme attributes vs View attributes (in less than 100 words)
+# Theme attributes vs View attributes (in less than 50 words)
 
 The new Android Theme System defines Theme attributes. Lets see how they differ from the View attributes.
 
-These are a view attribute  `android:textColor=red`, `android:fontFamily="@font/comic_neue"`. 
+These are view attribute. Applied to a single view.  `android:textColor=red`, `android:fontFamily="@font/comic_neue"`. 
 
-These are theme attribute `colorPrimary = red`,  `textAppearanceBody1 = ... `. These are defined in a Theme and they have an extra feature that View Attributes don't have.
+These are theme attribute. Applied to a theme. Used widely. Theme provides them and vary them `colorPrimary = red`,  `textAppearanceBody1 = ... `. These are defined in a Theme and they have an extra feature that View Attributes don't have.
 
 *You can define them in your theme and they will be the same in all the application.* (Change)
 
@@ -185,29 +185,103 @@ All these theme attributes are set to a specific pre made style, and as we did b
 
 To know which are the default styles that it uses we just need to follow the path of the theme. Right click on the theme, follow the thread until you find the style.
 For `Theme.MaterialComponents.DayNight.DarkActionBar` you can reach how `textAppearanceBody1` is set to the style `TextAppearance.MaterialComponents.Body1`
-<item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
-
-And Android will apply the current styling values(size, font...) for the `textAppearanceHeadline5` attribute.
-These are attributes and are stored in the MD library as references. Right click on it and you will find its definition:
 ```xml
-<attr format="reference" name="textAppearanceHeadline5"/>
+<item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
 ```
-A similar but different thing are the styles.
-Android internally associate each attribute with a style. For exmaple for the attribute `textAppearanceBody1` the style that it is directing is
-`TextAppearance.AppCompat.Body1`.
-> Note: There are not styles `TextAppearance.AppCompat.Headline5/4/3...` but there are `TextAppearance.AppCompat.Display1/2/3`
-As you see there are differnt libraries with different purpouses one for the attrs and one for the styles
 
+
+<img src="imgs/find-style.gif" alt="font-folder" width="800"/>
+
+You can see that we end up in `Base.V14.Theme.MaterialComponents.Light.Bridge` 
+
+
+The full list of Type styles in the Material Design library are these ones. 
+
+```xml
+    <!-- Type styles -->
+    <item name="textAppearanceHeadline1">@style/TextAppearance.MaterialComponents.Headline1</item>
+    <item name="textAppearanceHeadline2">@style/TextAppearance.MaterialComponents.Headline2</item>
+    <item name="textAppearanceHeadline3">@style/TextAppearance.MaterialComponents.Headline3</item>
+    <item name="textAppearanceHeadline4">@style/TextAppearance.MaterialComponents.Headline4</item>
+    <item name="textAppearanceHeadline5">@style/TextAppearance.MaterialComponents.Headline5</item>
+    <item name="textAppearanceHeadline6">@style/TextAppearance.MaterialComponents.Headline6</item>
+    <item name="textAppearanceSubtitle1">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+    <item name="textAppearanceSubtitle2">@style/TextAppearance.MaterialComponents.Subtitle2</item>
+    <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
+    <item name="textAppearanceBody2">@style/TextAppearance.MaterialComponents.Body2</item>
+    <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption</item>
+    <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
+    <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
+```
+
+Now we can use theme as base for our custom Type Styles.
+
+# Creating custom Theme Styles
+
+To create for example out custom style for the Headline5 we can add it as follows.
+
+First create a under the `res` folder a file called `type.xml`. 
+
+>Instead of creating the style in the `styles.xml` the new recomendation is the one presented in [Developing Themes with Style (Android Dev Summit '19)](https://www.youtube.com/watch?v=Owkf8DhAOSo&t=1999s) (I can't stop recommending this talk.)
+<img src="imgs/res-folders.png" alt="res-folder" width="600"/>
+
+
+Then add your TextAppearance style.
+```xml
+<style name="TextAppearance.MaterialComponents.Headline5.MyApp">
+  <item name="fontFamily">@font/comic_neue_light</item>
+</style>
+```
+## Easy Hierarchy
+Dot notation also applies inherintance so this `TextAppearance.MaterialComponents.Headline5.MyApp`  inherits from `TextAppearance.MaterialComponents.Headline5`. You dno't need to specify the parent explicitly.
+
+Finally what we need is to set up this style to our theme attribute in our theme definition.
+
+In your `themes.xml` where you are suppoused to to have your application theme, add the definition.
+
+```xml
+<style name="Base.Theme.MyApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+  <item name="textAppearanceHeadline5">@style/TextAppearance.MaterialComponents.Headline5.MyApp</item>
+</style>
+```
+
+Don't forget to add your theme in the manifest.
+```xml
+<application
+...
+android:theme="@style/Base.Theme.MyApp">
+```
+
+# The end
+
+That is it. Just get the Type styles and override waht you want from them and use the theme attributes in your textviews.
+Some widgets will use the theme attribute, so if you have all set you won't need to change nothing on the widget, the estyle will be get apropietrly.
+
+# Questions
+Should I use Material Components or AppCompat. As far as I looked at it I would suggest to go with the Material Components, they are more alligned with the Material Documentation. In case you can't add the library go with Appcompat but be awere that some theme atributes does not have the correspondong pre made style. 
+Like there is no  `TextAppearance.AppCompat.Subtitle1` or `Headline,2,3,4` but instad `Display1,2,3`. 
+
+# Widgets
+As you cans ee in the sample in the Types the Button widget does not set any textAppearance in its definition but it shows the correct Type Style.
+In the sample the Custom Tab Has TextView, AppCompatTextView, MaterialTextView, and none of theme set a default Type Style.  I don't know if this is the expected behavior, it is something that will come in the future or simply an error I made. In any case be aware of that.
+Like the Material Chip does have a default type style.
+So for these widgets you would need to set the textAppearance explicitily. 
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
 # Where are the attriubutes set for the default theme? 
 
 
 `androidx.appcompat` vs `com.google.android.material`
-# Easy Hierarchy
 
+> Note: There are not styles `TextAppearance.AppCompat.Headline5/4/3...` but there are `TextAppearance.AppCompat.Display1/2/3`
+As you see there are differnt libraries with different purpouses one for the attrs and one for the styles
 
 
 # Automatic settings
-In the the specific button we dont have to set the type textAppearance, it will get the one set for the attribute
+In the specific button we dont have to set the type textAppearance, it will get the one set for the attribute
 
 
 

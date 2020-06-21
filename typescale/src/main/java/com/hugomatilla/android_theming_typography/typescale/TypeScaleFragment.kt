@@ -12,7 +12,4 @@ class TypeScaleFragment : Fragment() {
     return inflater.inflate(R.layout.fragment_scale, container, false)
   }
 
-  companion object {
-    const val TAG = "TypeScaleFragment"
-  }
 }

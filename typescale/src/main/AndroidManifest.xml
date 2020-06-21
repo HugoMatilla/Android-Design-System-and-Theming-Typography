@@ -1,2 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.hugomatilla.android_theming_typography.typescale" />
+  package="com.hugomatilla.android_theming_typography.typescale">
+
+  <application>
+    <activity
+      android:name=".WidgetsActivity"
+      android:theme="@style/Theme.MyApp.TypeScale" />
+  </application>
+
+</manifest>

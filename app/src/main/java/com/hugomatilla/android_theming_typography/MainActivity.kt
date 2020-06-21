@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
       when (it.itemId) {
         id.simple -> simpleFragment.show()
         id.list -> typeScaleFragment.show()
+        id.custom -> customTypographyFragment.show()
       }
       true
     }

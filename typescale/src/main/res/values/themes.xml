@@ -2,20 +2,38 @@
 <resources>
 
   <style name="Theme.MyApp.TypeScale" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-    <item name="textAppearanceBody1">@style/TextAppearance.AppCompat.Body1.MyApp</item>
-    <item name="textAppearanceBody2">@style/TextAppearance.AppCompat.Body2.MyApp</item>
-    <item name="textAppearanceButton">@style/TextAppearance.AppCompat.Button.MyApp</item>
-    <item name="textAppearanceCaption">@style/TextAppearance.AppCompat.Caption.MyApp</item>
-    <!--    <item name="textAppearanceOverline">@style/Base.TextAppearance.MaterialComponents</item>-->
+    <!--    <item name="textAppearanceBody1">@style/TextAppearance.AppCompat.Body1.MyApp</item>-->
+    <!--    <item name="textAppearanceBody2">@style/TextAppearance.AppCompat.Body2.MyApp</item>-->
+    <!--    <item name="textAppearanceButton">@style/TextAppearance.AppCompat.Button.MyApp</item>-->
+    <!--    <item name="textAppearanceCaption">@style/TextAppearance.AppCompat.Caption.MyApp</item>-->
+    <!--    <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>-->
     <!--    <item name="textAppearanceSubtitle1">@style/TextAppearance.AppCompat.Small</item>-->
     <!--    <item name="textAppearanceSubtitle2">@style/TextAppearance.AppCompat.Large</item>-->
-    <item name="textAppearanceHeadline6">@style/TextAppearance.AppCompat.Title.MyApp</item>
-    <item name="textAppearanceHeadline1">@style/TextAppearance.AppCompat.Display4.MyApp</item>
-    <item name="textAppearanceHeadline2">@style/TextAppearance.AppCompat.Display3.MyApp</item>
-    <item name="textAppearanceHeadline3">@style/TextAppearance.AppCompat.Display2.MyApp</item>
-    <item name="textAppearanceHeadline4">@style/TextAppearance.AppCompat.Display1.TypeScale</item>
-    <item name="textAppearanceHeadline5">@style/TextAppearance.AppCompat.Headline.MyApp</item>
+    <!--    <item name="textAppearanceHeadline6">@style/TextAppearance.AppCompat.Title.MyApp</item>-->
+    <!--    <item name="textAppearanceHeadline1">@style/TextAppearance.AppCompat.Display4.MyApp</item>-->
+    <!--    <item name="textAppearanceHeadline2">@style/TextAppearance.AppCompat.Display3.MyApp</item>-->
+    <!--    <item name="textAppearanceHeadline3">@style/TextAppearance.AppCompat.Display2.MyApp</item>-->
+    <!--    <item name="textAppearanceHeadline4">@style/TextAppearance.AppCompat.Display1.TypeScale</item>-->
+    <!--    <item name="textAppearanceHeadline5">@style/TextAppearance.AppCompat.Headline.MyApp</item>-->
 
+
+    <item name="textAppearanceHeadline1">@style/TextAppearance.MaterialComponents.Headline1.MyApp</item>
+    <item name="textAppearanceHeadline2">@style/TextAppearance.MaterialComponents.Headline2.MyApp</item>
+    <item name="textAppearanceHeadline3">@style/TextAppearance.MaterialComponents.Headline3.MyApp</item>
+    <item name="textAppearanceHeadline4">@style/TextAppearance.MaterialComponents.Headline4.MyApp</item>
+    <item name="textAppearanceHeadline5">@style/TextAppearance.MaterialComponents.Headline5.MyApp</item>
+    <item name="textAppearanceHeadline6">@style/TextAppearance.MaterialComponents.Headline6.MyApp</item>
+    <item name="textAppearanceSubtitle1">@style/TextAppearance.MaterialComponents.Subtitle1.MyApp</item>
+    <item name="textAppearanceSubtitle2">@style/TextAppearance.MaterialComponents.Subtitle2.MyApp</item>
+    <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1.MyApp</item>
+    <item name="textAppearanceBody2">@style/TextAppearance.MaterialComponents.Body2.MyApp</item>
+    <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption.MyApp</item>
+    <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button.MyApp</item>
+    <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline.MyApp</item>
+  </style>
+
+  <style name="Theme.MyApp.TypeScale.Alternative" parent="Theme.MyApp.TypeScale">
+    <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1.MyApp.Alternative</item>
   </style>
 
 </resources>

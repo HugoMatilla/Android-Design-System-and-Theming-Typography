@@ -2,10 +2,9 @@
 <resources>
 
   <!--  Same as -->
-  <!--  <style name="TextAppearance.AppCompat.Body1.MyApp" parent="TextAppearance.AppCompat.Body1">-->
-  <style name="TextAppearance.AppCompat.Display1.MyApp">
+  <!--  <style name="TextAppearance.MaterialComponents.Headline6.MyApp" parent="TextAppearance.MaterialComponents.Headline6">-->
+  <style name="TextAppearance.MaterialComponents.Headline6.MyApp">
     <item name="fontFamily">@font/comic_neue_light</item>
   </style>
-
 
 </resources>
