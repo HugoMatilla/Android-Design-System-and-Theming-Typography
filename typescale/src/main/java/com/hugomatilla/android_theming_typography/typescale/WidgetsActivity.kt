@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import kotlinx.android.synthetic.main.fragment_custom.fab
 
 class WidgetsActivity : AppCompatActivity() {
   companion object {
@@ -18,9 +17,6 @@ class WidgetsActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_widgets)
-    fab.setOnClickListener {
-      reload()
-    }
   }
 
   private fun reload() {

@@ -14,4 +14,8 @@
     android:id="@+id/custom"
     android:icon="@drawable/ic_brush_24dp"
     android:title="CUSTOM" />
+  <item
+    android:id="@+id/widgets"
+    android:icon="@drawable/ic_baseline_widgets_24dp"
+    android:title="WIDGETS" />
 </menu>

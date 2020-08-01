@@ -2,60 +2,66 @@
 <resources>
 
   <style name="TextAppearance.MaterialComponents.Body1.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
   <style name="TextAppearance.MaterialComponents.Body1.MyApp.Alternative">
-    <item name="fontFamily">@font/libre_caslon_bold</item>
+    <item name="fontFamily">@font/chakra_petch_bold</item>
     <item name="android:textColor">#660099</item>
   </style>
 
+  <style name="TextAppearance.MaterialComponents.Body1.MyApp.Alternative2">
+    <item name="fontFamily">@font/chakra_petch_italic</item>
+    <item name="android:textColor">#449900</item>
+    <item name="android:textSize">24sp</item>
+  </style>
+
   <style name="TextAppearance.MaterialComponents.Body2.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
   <style name="TextAppearance.MaterialComponents.Button.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
   <style name="TextAppearance.MaterialComponents.Overline.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
   <style name="TextAppearance.MaterialComponents.Caption.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
   <style name="TextAppearance.MaterialComponents.Headline1.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
   <style name="TextAppearance.MaterialComponents.Headline2.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
   <style name="TextAppearance.MaterialComponents.Headline3.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
   <style name="TextAppearance.MaterialComponents.Headline4.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
   <style name="TextAppearance.MaterialComponents.Headline5.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
   <style name="TextAppearance.MaterialComponents.Headline6.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
   <style name="TextAppearance.MaterialComponents.Subtitle1.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
   <style name="TextAppearance.MaterialComponents.Subtitle2.MyApp">
-    <item name="fontFamily">@font/libre_caslon</item>
+    <item name="fontFamily">@font/chakra_petch</item>
   </style>
 
 </resources>
