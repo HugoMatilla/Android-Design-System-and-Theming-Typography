@@ -1,13 +1,10 @@
 Companion App for the Article `Android App Theming: Typography` published in: (Not yet published 🏗)
-
-<table >
-  <tr>
+<div style= "display: flex; flex-flow: row wrap; justify-content: space-between;">
     <img src="imgs/app_simple.jpg" width="200">
     <img src="imgs/app_list.jpg" width="200">
     <img src="imgs/app_overlays.jpg" width="200">
     <img src="imgs/app_widgets.jpg" width="200">
-  </tr>
-</table>
+</div>
 
 
 
