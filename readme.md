@@ -1,4 +1,16 @@
 Companion App for the Article `Android App Theming: Typography` published in: (Not yet published 🏗)
+
+<table >
+  <tr>
+    <img src="imgs/app_simple.jpg" width="200">
+    <img src="imgs/app_list.jpg" width="200">
+    <img src="imgs/app_overlays.jpg" width="200">
+    <img src="imgs/app_widgets.jpg" width="200">
+  </tr>
+</table>
+
+
+
 # Android App Theming: Typography
 <!-- TOC -->
 
@@ -40,11 +52,6 @@ Because this topic is large, in this article I will focus just on the typography
 * And finally, we will see how to use and customize our typography. [6. Creating custom Theme Styles](#6-creating-custom-theme-styles)
 
 > **Companion App**: You can follow this article with this Github Project: [Android Design System and Theming: Typography](https://github.com/HugoMatilla/Android-Design-System-and-Theming-Typography)
-
-<img src="imgs/app_simple.jpg" width="200">
-<img src="imgs/app_list.jpg" width="200">
-<img src="imgs/app_overlays.jpg" width="200">
-<img src="imgs/app_widgets.jpg" width="200">
 
 # 2. Using Fonts
 ## Add Fonts to your project
