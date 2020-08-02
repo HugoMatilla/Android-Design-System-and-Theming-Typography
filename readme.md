@@ -18,7 +18,7 @@
   - [Widgets](#widgets)
   - [Material Components vs AppCompat. Which library should I use?](#material-components-vs-appcompat-which-library-should-i-use)
 - [8. Recap](#8-recap)
-- [9. Conclusion:](#9-conclusion)
+- [9. Conclusion](#9-conclusion)
 
 <!-- /TOC -->
 
@@ -35,10 +35,15 @@ Because this topic is large, in this article I will focus just on the typography
 
 * We will see first, how to apply different text fonts in our app. [2. Using Fonts](#2-using-fonts)
 * Then we will review how Android uses differents text styles internally and how we can use them. [3. The Android Design System](#3-the-android-design-system)
-* After that, we will review [4. The Material Design Type System](#4-the-material-design-type-system) and its relation with the [5. Android Theming](#5-android-theming)
+* After that, we will review [4. The Material Design Type System](#4-the-material-design-type-system) and its relation with [5. Android Theming](#5-android-theming)
 * And finally, we will see how to use and customize our typography. [6. Creating custom Theme Styles](#6-creating-custom-theme-styles)
 
 > **Companion App**: You can follow this article with this Github Project: [Android Design System and Theming: Typography](https://github.com/HugoMatilla/Android-Design-System-and-Theming-Typography)
+
+<img src="imgs/app_simple.jpg" width="200">
+<img src="imgs/app_list.jpg" width="200">
+<img src="imgs/app_overlays.jpg" width="200">
+<img src="imgs/app_widgets.jpg" width="200">
 
 # 2. Using Fonts
 ## Add Fonts to your project
@@ -397,7 +402,7 @@ There are 4 steps to have your custom type styles in your Android App using Them
 3. Add to the theme the styles for every **Text Appearance Theme Attribute**: `textAppearanceBody1`,`textAppearanceHeadline1`...
 4. Apply them in your views: `android:textAppearance="?attr/textAppearanceBody1"`
 
-# 9. Conclusion:
+# 9. Conclusion
 Android Styling and Theming is a big topic but once you know how it works it can simplify your style definitions, and increase your development speed.
 
 The Material Design library works pretty well with Android so you can benefit from it. And in case you need to add your custom Design System, it is very easy to create a theme and add your styles.
