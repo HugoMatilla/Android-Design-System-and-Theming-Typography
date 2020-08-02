@@ -12,7 +12,7 @@
 - [5. Android Theming](#5-android-theming)
   - [Theme attributes vs View attributes (in less than 100 words)](#theme-attributes-vs-view-attributes-in-less-than-100-words)
   - [Android text appearance attributes](#android-text-appearance-attributes)
-- [6. Creating custom Theme Styles](#6-creating-custom-theme-styles)
+- [6. Creating custom Theme](#6-creating-custom-theme)
 - [7. Extra points:](#7-extra-points)
   - [Overlays](#overlays)
   - [Widgets](#widgets)
@@ -282,7 +282,7 @@ The full list of Typestyles in the Material Design library is this one.
 
 Now we can use the theme as base for our custom Type Styles.
 
-# 6. Creating custom Theme Styles
+# 6. Creating custom Theme
 
 To create our custom style for example for the `Headline5` we can do as follows.
 
