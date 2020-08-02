@@ -1,3 +1,4 @@
+Companion App for the Article `Android App Theming: Typography` published in: (Not yet published 🏗)
 # Android App Theming: Typography
 <!-- TOC -->
 
