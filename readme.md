@@ -12,8 +12,8 @@
 - [5. Android Theming](#5-android-theming)
   - [Theme attributes vs View attributes (in less than 100 words)](#theme-attributes-vs-view-attributes-in-less-than-100-words)
   - [Android text appearance attributes](#android-text-appearance-attributes)
-- [6. Creating custom Theme](#6-creating-custom-theme)
-- [7. Extra points:](#7-extra-points)
+- [6. Creating custom Themes](#6-creating-custom-themes)
+- [7. Extra](#7-extra)
   - [Overlays](#overlays)
   - [Widgets](#widgets)
   - [Material Components vs AppCompat. Which library should I use?](#material-components-vs-appcompat-which-library-should-i-use)
@@ -282,7 +282,7 @@ The full list of Typestyles in the Material Design library is this one.
 
 Now we can use the theme as base for our custom Type Styles.
 
-# 6. Creating custom Theme
+# 6. Creating custom Themes
 
 To create our custom style for example for the `Headline5` we can do as follows.
 
@@ -332,7 +332,7 @@ In all the `TextViews` whose `textAppearance` is set to  `textAppearanceHeadline
   android:textAppearance="?attr/textAppearanceHeadline5" />
 ```
 
-# 7. Extra points:
+# 7. Extra
 
 ## Overlays
 Another cool feature in the Android Theming System is theme overlays.
