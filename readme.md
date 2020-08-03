@@ -53,16 +53,14 @@ Because this topic is large, in this article I will focus just on the typography
 # 2. Using Fonts
 ## Add Fonts to your project
 
-Let's start simply by adding a font for our app.
-
-Since Android 8.0 fonts can be used as resources. For the previous version, you can use the Support Library 26.  
+Since Android 8.0 fonts can be used as resources. For previous versions, you can use the Support Library 26.  
 
 Firstly create the `font` folder under the `res` folder. Secondly, add your fonts there. Names must be lower case and with underscores. Like other xmls in Android.
 
 <img src="imgs/font-folder.png" alt="font-folder" width="350"/>
 
 
-And finally, create your font family resources xml. Here is where the definitions of your fonts will be.
+Finally, create your font family resources xml. Here is where the definitions of your fonts will be.
 
 `comic_neue.xml`
 ```xml
@@ -181,7 +179,7 @@ Here are the 13 styles:
 
 These styles are used in all the Material Design Definitions. If you go to the Material Design documentation, and look for a component you will find the corresponding **Type Scale** associated with each element.
 
-In the `List` component in the [theming typography section](https://material.io/components/lists#theming) you can see how they use the **Type Scale** to define the styles of the different list components. 
+For example, in the `List` component in the [theming typography section](https://material.io/components/lists#theming) you can see how they use the **Type Scale** to define the styles of the different list components. 
 
 <img src="imgs/type-scale-sample.png" alt="font-folder" width="400"/>
 <p></p>
@@ -241,9 +239,9 @@ We are talking about typography, so which are the **Theme Attributes** for typog
    textAppearanceSubtitle2
 ```
 
-If you remember, the Material Design Docs said 13 type styles would be enough and Android provide us with these 13 theme attributes
+If you remember, the Material Design Docs said: "*13 type styles would be enough*". Android provides us with these 13 **theme attributes**
 
-All these **Theme Attributes** are set to a specific premade style, and as we did before with the premade styles, we can do it with the theme attributes.
+All these **Theme Attributes** are set to a specific premade style, and as we did before with the premade styles, we can do it with the **theme attributes**.
 
 ```xml
   <TextView
@@ -251,7 +249,7 @@ All these **Theme Attributes** are set to a specific premade style, and as we di
   android:textAppearance="?attr/textAppearanceHeadline5" />
 ```
 
-To know which are the default styles that Android uses we just need to follow the path of the theme. Right-click on the theme, follow the thread until you find the style.
+To know which are the default styles that Android uses we just need to follow the path of the them. Right-click on the attribute, follow the thread until you find the style.
 For `Theme.MaterialComponents.DayNight.DarkActionBar` you can reach how `textAppearanceBody1` is set to the style `TextAppearance.MaterialComponents.Body1`
 ```xml
 <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
@@ -289,7 +287,7 @@ Now we can use the theme as base for our custom Type Styles.
 
 # 6. Creating custom Themes
 
-To create our custom style for example for the `Headline5` we can do as follows.
+For example, to create our custom style for the `Headline5`, we can do as follows.
 
 First, create a file under the `res` folder called `type.xml`. 
 
@@ -308,7 +306,7 @@ Second, add your TextAppearance style.
 > **Easy Hierarchy**: 
 > Dot notation also applies inheritance so this `TextAppearance.MaterialComponents.Headline5.MyApp`  inherits from `TextAppearance.MaterialComponents.Headline5`. You don't need to specify the parent explicitly.
 
-Finally, what we need is to set up this style to our **Theme Attribute** in our **Theme Definition**.
+Finally, we need to set up this style to our **Theme Attribute** in our **Theme Definition**.
 
 In your `themes.xml` add the definition.
 
@@ -327,8 +325,6 @@ android:theme="@style/Base.Theme.MyApp">
 
 And that is it.
 
-Just get the Typestyles, override what you want and use the **Theme Attributes** in your `textviews`.
-
 In all the `TextViews` whose `textAppearance` is set to  `textAppearanceHeadline5`, your custom style will be set. 
 
 ```xml
@@ -343,7 +339,7 @@ In all the `TextViews` whose `textAppearance` is set to  `textAppearanceHeadline
 Another cool feature in the Android Theming System is theme overlays.
 A **Theme Overlay** is a technic to change the theme of a part of your view and its descendant in a simple easy way.
 
-In any of your views, you can add the `android:theme` attribute to a different theme of your main theme, and not only the view but all its children will use the new theme.
+In any of your views, you can add the `android:theme` attribute and set it to a specific theme. The view and all its children will use the new theme.
 
 `types.xml`
 ```xml
@@ -382,6 +378,8 @@ In any of your views, you can add the `android:theme` attribute to a different t
     </LinearLayout>
 
 ```
+<img src="imgs/app_overlays.jpg" width="200">
+
 > Check this in the companions app `typescale` module [fragment_custom.xml](https://github.com/HugoMatilla/Android-Design-System-and-Theming-Typography/blob/master/typescale/src/main/res/layout/fragment_custom.xml)
 
 ## Widgets
@@ -389,13 +387,13 @@ Some widgets will use the **Theme Attributes**, so if you have all set you won't
 
 > Check this in the companions app `typescale` module [fragment_widgets.xml](https://github.com/HugoMatilla/Android-Design-System-and-Theming-Typography/blob/master/typescale/src/main/res/layout/fragment_widgets.xml)
 
-As you can see in the Companion App in the Types the `Button` and the `MaterialChip` widgets do not set any `textAppearance` in its definition but it shows the correct **Type Style**.
-But others like the `CheckBox` or the `Switch` do not have a default `textAppearance`. For these widgets, you would need to set it explicitly. 
+As you can see in the Companion App in the Widgets Tab, the `Button` and the `MaterialChip` widgets do not set any `textAppearance` in its definition, and it shows the correct **Type Style**.
+But others like the `CheckBox` or the `Switch` do not have a default `textAppearance`. For these (and others) widgets, you would need to set it explicitly. 
 
 <img src="imgs/app_widgetsAll.jpg" alt="widgets" width="300"/>
 
 ##  Material Components vs AppCompat. Which library should I use?
-After looking at it I would suggest to go with the Material Components Library, the style is more aligned with the Material Documentation. 
+I would suggest to go with the Material Components Library, the style is more aligned with the Material Documentation. 
 
 In case you can't add the library, go with Appcompat but be aware that some theme attributes do not have the corresponding premade style. 
 Like there is no  `TextAppearance.AppCompat.Subtitle1` or `Headline,2,3,4` but instad `Display1,2,3`. 
@@ -412,10 +410,10 @@ Android Styling and Theming is a big topic but once you know how it works it can
 
 The Material Design library works pretty well with Android so you can benefit from it. And in case you need to add your custom Design System, it is very easy to create a theme and add your styles.
 
-Many of the topics presented in this article can be applied not only to the typography, but also to colors and shapes. (Let me know and if you liked this article and want me to write about colors and shapes.)
+Many of the topics presented in this article can be applied not only to the typography, but also to colors and shapes. (Let me know if you liked this article and want me to write about colors and shapes.)
 
 Before saying good bay I want to recommend you to check Android Dev Summit talk [Developing Themes with Style](https://www.youtube.com/watch?v=Owkf8DhAOSo) from [Nick Butcher](https://twitter.com/crafty) and [Chris Banes](https://twitter.com/chrisbanes). There are also several [posts in Medium](https://medium.com/@crafty) from Nick Butcher covering all topics about theming and styling. 
 
-Finally, I hope this article helps you a bit to understand **Android Theming and Styling** a bit better.
+Finally, I hope this article helps you to understand **Android Theming and Styling** a bit better.
 
 Thank you for reading. 
