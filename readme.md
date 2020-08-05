@@ -8,10 +8,10 @@ Companion App for the Article `Android App Theming: Typography` published in: (N
 
 
 
-# Android App Theming: Typography
+# Android Design System and Theming: Typography
 <!-- TOC -->
 
-- [Android App Theming: Typography](#android-app-theming-typography)
+- [Android Design System and Theming: Typography](#android-design-system-and-theming-typography)
 - [1. Introduction](#1-introduction)
 - [2. Using Fonts](#2-using-fonts)
   - [Add Fonts to your project](#add-fonts-to-your-project)
