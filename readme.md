@@ -412,7 +412,7 @@ The Material Design library works pretty well with Android so you can benefit fr
 
 Many of the topics presented in this article can be applied not only to the typography, but also to colors and shapes. (Let me know if you liked this article and want me to write about colors and shapes.)
 
-Before saying goodbye I recommend you checking this Android Dev Summit talk [Developing Themes with Style](https://www.youtube.com/watch?v=Owkf8DhAOSo) by [Nick Butcher](https://twitter.com/crafty) and [Chris Banes](https://twitter.com/chrisbanes). There are also several [posts in Medium](https://medium.com/@crafty) from Nick Butcher covering all topics about theming and styling. 
+Before saying goodbye I recommend you checking this Android Dev Summit talk [Developing Themes with Style](https://www.youtube.com/watch?v=Owkf8DhAOSo) by [Nick Butcher](https://twitter.com/crafty) and [Chris Banes](https://twitter.com/chrisbanes). There are also several [posts in Medium](https://medium.com/@crafty) by Nick Butcher covering all topics about theming and styling. 
 
 Finally, I hope this article helps you to understand **Android Theming and Styling** a bit better.
 
