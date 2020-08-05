@@ -1,4 +1,4 @@
-Companion App for the Article `Android App Theming: Typography` published in: (Not yet published 🏗, but you can read it in the readme) 
+Companion App for the Article `Android App Theming: Typography` published in: (Not published yet 🏗, but you can read it in the readme) 
 <div style= "display: flex; flex-flow: row wrap; justify-content: space-between;">
     <img src="imgs/app_simple.jpg" width="200">
     <img src="imgs/app_list.jpg" width="200">
@@ -60,7 +60,7 @@ Firstly create the `font` folder under the `res` folder. Secondly, add your font
 <img src="imgs/font-folder.png" alt="font-folder" width="350"/>
 
 
-Finally, create your font family resources xml. Here is where the definitions of your fonts will be.
+Finally, create your font family resources xml file. Here is where the definitions of your fonts will be.
 
 `comic_neue.xml`
 ```xml
@@ -96,7 +96,7 @@ Finally, create your font family resources xml. Here is where the definitions of
 > **Using in Support Library**: Declare font families in XML, using the `app` namespace.
 > [Official Documentation](https://developer.android.com/guide/topics/ui/look-and-feel/fonts-in-xml#using-support-lib)
 
-We have everything set up. Now let use it.
+We have everything set up. Now let's use it.
 
 ## Applying the fonts
 There are 3 ways to do that.
@@ -164,7 +164,7 @@ In the next image, you can see some `TextAppearance` styles from the AppCompat L
 These look big and overwhelming but don't worry we are going to simplify all of it.
 
 # 4. The Material Design Type System
-To continue, let us check the Material Design documentation for [Type Scale](https://material.io/design/typography/the-type-system.html#type-scale) about typography.
+To continue, let's check the Material Design documentation for [Type Scale](https://material.io/design/typography/the-type-system.html#type-scale) about typography.
 
 The main 2 points of its definition are:
 > * A range of contrasting styles that support the needs of your product and its content.
@@ -239,7 +239,7 @@ We are talking about typography, so which are the **Theme Attributes** for typog
    textAppearanceSubtitle2
 ```
 
-If you remember, the Material Design Docs said: "*13 type styles would be enough*". Android provides us with these 13 **theme attributes**
+If you remember, the Material Design Docs said: "*13 type styles would be enough*". Android provides us with these 13 **theme attributes**.
 
 All these **Theme Attributes** are set to a specific premade style, and as we did before with the premade styles, we can do it with the **theme attributes**.
 
@@ -283,7 +283,7 @@ The full list of Typestyles in the Material Design library is this one.
     <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
 ```
 
-Now we can use the theme as base for our custom Type Styles.
+Now we can use the theme as a base for our custom Type Styles.
 
 # 6. Creating custom Themes
 
@@ -323,7 +323,7 @@ Don't forget to add your theme in the manifest.
 android:theme="@style/Base.Theme.MyApp">
 ```
 
-And that is it.
+And that's it.
 
 In all the `TextViews` whose `textAppearance` is set to  `textAppearanceHeadline5`, your custom style will be set. 
 
@@ -396,7 +396,7 @@ But others like the `CheckBox` or the `Switch` do not have a default `textAppear
 I would suggest to go with the Material Components Library, the style is more aligned with the Material Documentation. 
 
 In case you can't add the library, go with Appcompat but be aware that some theme attributes do not have the corresponding premade style. 
-Like there is no  `TextAppearance.AppCompat.Subtitle1` or `Headline,2,3,4` but instad `Display1,2,3`. 
+Like there is no  `TextAppearance.AppCompat.Subtitle1` or `Headline,2,3,4` but instead `Display1,2,3`. 
 
 # 8. Recap
 There are 4 steps to have your custom type styles in your Android App using Theming:
@@ -412,7 +412,7 @@ The Material Design library works pretty well with Android so you can benefit fr
 
 Many of the topics presented in this article can be applied not only to the typography, but also to colors and shapes. (Let me know if you liked this article and want me to write about colors and shapes.)
 
-Before saying good bay I want to recommend you to check Android Dev Summit talk [Developing Themes with Style](https://www.youtube.com/watch?v=Owkf8DhAOSo) from [Nick Butcher](https://twitter.com/crafty) and [Chris Banes](https://twitter.com/chrisbanes). There are also several [posts in Medium](https://medium.com/@crafty) from Nick Butcher covering all topics about theming and styling. 
+Before saying goodbye I recommend you checking this Android Dev Summit talk [Developing Themes with Style](https://www.youtube.com/watch?v=Owkf8DhAOSo) by [Nick Butcher](https://twitter.com/crafty) and [Chris Banes](https://twitter.com/chrisbanes). There are also several [posts in Medium](https://medium.com/@crafty) from Nick Butcher covering all topics about theming and styling. 
 
 Finally, I hope this article helps you to understand **Android Theming and Styling** a bit better.
 
