@@ -1,4 +1,4 @@
-Companion App for the Article `Android App Theming: Typography` published in: (Not published yet 🏗, but you can read it in the readme) 
+Companion App for the Article `Android App Theming: Typography` published in : [proandroiddev.com](https://proandroiddev.com/android-design-system-and-theming-typography-6260c37b1243) You also can read it in the readme
 <div style= "display: flex; flex-flow: row wrap; justify-content: space-between;">
     <img src="imgs/app_simple.jpg" width="200">
     <img src="imgs/app_list.jpg" width="200">
