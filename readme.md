@@ -421,4 +421,4 @@ Finally, I hope this article helps you to understand **Android Theming and Styli
 
 Thank you for reading. 
 
-PS: Thanks to @naufalaros for checking reviewing the article 😉
+PS: Thanks to @naufalaros for reviewing the article 😉
