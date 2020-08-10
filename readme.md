@@ -420,3 +420,5 @@ Before saying goodbye I recommend you checking this Android Dev Summit talk [Dev
 Finally, I hope this article helps you to understand **Android Theming and Styling** a bit better.
 
 Thank you for reading. 
+
+PS: Thanks to @naufalaros for checking reviewing the article 😉
