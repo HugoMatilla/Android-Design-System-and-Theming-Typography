@@ -340,9 +340,11 @@ In all the `TextViews` whose `textAppearance` is set to  `textAppearanceHeadline
 
 ## Overlays
 Another cool feature in the Android Theming System is theme overlays.
-A **Theme Overlay** is a technic to change the theme of a part of your view and its descendant in a simple easy way.
+A **Theme Overlay** is a technique to change the theme of a part of your view and its descendant in a simple easy way.
 
 In any of your views, you can add the `android:theme` attribute and set it to a specific theme. The view and all its children will use the new theme.
+
+> **ThemeOverlays** inherit from an empty parent, should define as few attributes as possible, and its name should start with `ThemeOverlay`, thus it's clear its purpose. 
 
 `types.xml`
 ```xml
@@ -353,7 +355,7 @@ In any of your views, you can add the `android:theme` attribute and set it to a 
 ```
 `styles.xml`
 ```xml
-<style name="Theme.MyApp.TypeScale.Alternative" parent="Theme.MyApp.TypeScale">
+<style name="ThemeOverlay.MyApp.TypeScale.Alternative" parent="">
     <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1.MyApp.Alternative</item>
   </style>
 ```
@@ -369,7 +371,7 @@ In any of your views, you can add the `android:theme` attribute and set it to a 
     <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:theme="@style/Theme.MyApp.TypeScale.Alternative">
+      android:theme="@style/ThemeOverlay.MyApp.TypeScale.Alternative">
 
       <TextView
         android:layout_width="match_parent"
